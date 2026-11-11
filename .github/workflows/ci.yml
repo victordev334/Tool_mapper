@@ -6,8 +6,8 @@ on:
       - main
       - victor
     paths:
-      - 'tools/zoo-mapper/**'
-      - '.github/workflows/deploy-zoo-mapper.yml'
+      - 'tool/zoo-mapper/**'
+      - '.github/workflows/ci.yml'
   workflow_dispatch:
 
 permissions:
@@ -35,7 +35,7 @@ jobs:
       - name: Subir contenido de zoo-mapper
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'tools/zoo-mapper'
+          path: 'tool/zoo-mapper'
 
       - name: Publicar en GitHub Pages
         id: deployment
